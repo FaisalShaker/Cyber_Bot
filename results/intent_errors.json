@@ -1,0 +1,26 @@
+[
+  {
+    "text": "How can I protect my computer from malware?",
+    "intent": "ask_advice",
+    "intent_prediction": {
+      "name": "ask_about_data_privacy",
+      "confidence": 0.12770453095436096
+    }
+  },
+  {
+    "text": "Any tips for securing my network?",
+    "intent": "ask_advice",
+    "intent_prediction": {
+      "name": "ask_network_security_tips",
+      "confidence": 0.3118802607059479
+    }
+  },
+  {
+    "text": "Can you scan for malware?",
+    "intent": "scan_viruses",
+    "intent_prediction": {
+      "name": "scan_malware",
+      "confidence": 0.34835195541381836
+    }
+  }
+]

@@ -1,0 +1,278 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hello
+    - Hi
+    - Hey
+    - Good morning
+    - Good afternoon
+    - Howdy
+
+- intent: about_chatbot
+  examples: |
+    - What are you?
+    - Who are you?
+    - Tell me about yourself
+    - What can you do?
+    - Explain your purpose
+
+- intent: goodbye
+  examples: |
+    - Goodbye
+    - Bye
+    - See you later
+    - Have a great day
+    - Take care
+
+- intent: thanks
+  examples: |
+    - Thank you
+    - Thanks a lot
+    - I appreciate your help
+    - Thanks for the advice
+
+- intent: ask_advice
+  examples: |
+    - Can you give me some advice?
+    - What should I do?
+    - Any recommendations?
+    - What can I do to improve my security?
+    - How can I protect my computer from malware?
+    - Any tips for securing my network?
+    - Can you give me some cybersecurity advice?
+
+- intent: affirm
+  examples: |
+    - Yes
+    - Sure
+    - Absolutely
+    - Indeed
+    - That's correct
+    - I agree
+
+- intent: deny
+  examples: |
+    - No
+    - Not really
+    - I don't think so
+    - That's not true
+    - I disagree
+
+- intent: scan_viruses
+  examples: |
+    - Scan my computer for viruses
+    - Check for viruses
+    - Is my system infected?
+    - Can you scan for malware?
+    
+
+- intent: scan_malware
+  examples: |
+    - Scan my system for malware
+    - Check for malware
+    - Is there any malware on my computer?
+    - Can you scan for malicious software?
+
+- intent: update_software
+  examples: |
+    - How do I update my software?
+    - Is my software up to date?
+    - Should I update my applications?
+    - Any recommendations for updating software?
+    - Software update
+
+- intent: enable_firewall
+  examples: |
+    - How can I enable the firewall?
+    - Is my firewall enabled?
+    - Should I turn on the firewall?
+    - Can you help me with firewall settings?
+    - Start firewall
+    - Enable firewall
+
+- intent: install_antivirus
+  examples: |
+    - What antivirus software should I install?
+    - How can I install an antivirus program?
+    - Any recommendations for antivirus software?
+    - Is antivirus necessary?
+    - Install antivirus
+    - Download antivirus
+    - Which antivirus software should I use?
+    - Can you recommend a good antivirus program?
+    - What is the best antivirus software?
+
+- intent: ask_firewall_recommendation
+  examples: |
+    - Do I need a firewall?
+    - Which firewall software do you recommend?
+    - Can you suggest a good firewall solution?
+    - What is the best firewall software?
+    - Any recommendations for firewall applications?
+    - Which firewall should I use to protect my network?
+    - Can you help me choose a firewall for my system?
+    - I'm looking for a reliable firewall. Any suggestions?
+    - Do you recommend a firewall?
+
+- intent: ask_software_update_frequency
+  examples: |
+    - How often should I update my software?
+    - What is the recommended frequency for software updates?
+    - Should I update my software regularly?
+    - Is it necessary to update software frequently?
+    - How frequently should I check for software updates?
+    - Do software updates have a specific schedule?
+    - What happens if I don't update my software regularly?
+    - Can outdated software pose security risks?
+    - Are there any guidelines for software update frequency?
+
+- intent: ask_password_best_practices
+  examples: |
+    - What are the best practices for creating strong passwords?
+    - How can I make my passwords more secure?
+    - Any tips for choosing strong passwords?
+    - How can I create a strong password?
+    - What makes a password secure?
+    - Any tips for password strength?
+    - Can you help me improve my password?
+
+- intent: ask_security_breach_response
+  examples: |
+    - What should I do if I suspect a security breach?
+    - How to respond to a cybersecurity incident?
+    - What are the steps to take after a security breach?
+    - I think my system has been compromised. What should I do?
+    - How can I handle a security breach effectively?
+    - What actions should I take after detecting a security incident?
+    - Are there any guidelines for responding to a security breach?
+    - Can you provide a checklist for dealing with a cybersecurity breach?
+
+- intent: ask_data_backup_methods
+  examples: |
+    - How can I backup my important data?
+    - What are the recommended data backup methods?
+    - Any suggestions for data backup strategies?
+    - How should I protect my data with backups?
+    - Can you recommend reliable data backup solutions?
+    - What are the best practices for backing up data?
+    - I want to ensure the safety of my data. What backup methods should I use?
+    - Are there any specific tools or software for data backups?
+    
+- intent: ask_safe_browsing_tips
+  examples: |
+    - How can I browse the internet safely?
+    - Any tips for secure web browsing?
+    - What are the best practices for safe online browsing?
+    - How can I protect myself while browsing the internet?
+    - Can you provide some guidelines for safe web browsing?
+    - I want to ensure my online safety. What precautions should I take while browsing?
+
+- intent: ask_phishing_prevention
+  examples: |
+    - How can I protect myself from phishing attacks?
+    - What are the signs of a phishing email?
+    - Any tips for preventing phishing incidents?
+    - How can I identify and avoid phishing scams?
+    - I want to improve my phishing awareness. What should I look out for?
+    - Can you provide some guidelines to prevent falling for phishing attempts?
+    - Phishing prevention tips
+
+- intent: ask_social_engineering_awareness
+  examples: |
+    - How can I be more aware of social engineering tactics?
+    - What are some common social engineering techniques?
+    - Any tips for detecting social engineering attempts?
+    - How can I protect myself from social engineering attacks?
+    - Can you provide some guidelines to improve my social engineering awareness?
+
+- intent: ask_network_security_tips
+  examples: |
+    - How can I secure my home network?
+    - What are the best practices for network security?
+    - Any tips for protecting my Wi-Fi network?
+    - How can I make my wireless network more secure?
+    - What should I do to prevent unauthorized access to my network?
+    - Are there any specific settings I should configure for network security?
+    - Can you provide guidelines for securing my router and network?
+    - How can I protect my network from hacking attempts?
+    - Any recommendations for network security tools?
+    - Network security tips 
+
+- intent: ask_mobile_device_security
+  examples: |
+    - How can I enhance security on my mobile device?
+    - Any tips for securing my smartphone or tablet?
+    - What are the recommended mobile device security practices?
+    - How can I keep my smartphone secure?
+    - Any tips for securing my tablet?
+    - What measures should I take to protect my mobile device?
+    - Are there any specific security practices for mobile phones?
+    - How can I safeguard my personal information on my mobile device?
+    - What are the best practices for mobile device security?
+    - Can you provide some advice on securing my smartphone?
+    - How can I ensure the privacy of my mobile device?
+    - Any recommendations for mobile device security?
+    - What steps can I take to enhance the security of my tablet?
+
+- intent: report_incident
+  examples: |
+    - I need to report a security incident.
+    - How do I report a cybersecurity incident?
+    - Can you help me with reporting a data breach?
+    - I need to report an incident.
+
+- intent: recover_hacked_account
+  examples: |
+    - My account has been hacked. What should I do?
+    - Can you assist me in recovering my compromised account?
+    - How can I regain access to my hacked account?
+    - Recover hacked account 
+
+- intent: ask_about_phishing
+  examples: |
+    - What is phishing?
+    - What can you tell me about phishing?
+    - What is phishing?
+    - How does a phishing attack work?
+    - Can you explain the concept of phishing to me?
+
+- intent: ask_about_malware
+  examples: |
+    - What is malware?
+    - What can you tell me about malware? 
+    - What is malware?
+    - How does malware infect a system?
+    - Can you provide information about different types of malware?
+
+- intent: ask_about_ransomware
+  examples: |
+    - What is ransomware?
+    - How does ransomware work?
+    - Can you explain the impact of ransomware attacks?
+
+- intent: ask_about_data_privacy
+  examples: |
+    - How can I protect my personal data?
+    - What are the best practices for data privacy?
+    - Can you provide tips for safeguarding sensitive information?
+    - How can i keep my data privacy secure?
+
+- intent: ask_about_social_media_security
+  examples: |
+    - How can I secure my social media accounts?
+    - Are there any specific security measures for social media platforms?
+    - Can you provide guidance on protecting privacy on social media?
+
+- intent: ask_about_multi_factor_authentication
+  examples: |
+    - What is multi-factor authentication?
+    - How does multi-factor authentication improve security?
+    - Can you explain the different types of multi-factor authentication?
+
+- intent: ask_about_cybersecurity
+  examples: |
+    - What is cybersecurity?
+    - Why is cybersecurity important?
+    - How can I improve my cybersecurity?

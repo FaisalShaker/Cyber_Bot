@@ -1,0 +1,142 @@
+version: "3.1"
+
+rules:
+  - rule: Respond to a greeting
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Provide information about the chatbot
+    steps:
+      - intent: about_chatbot
+      - action: utter_about_chatbot
+
+  - rule: Respond to a goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Respond to gratitude
+    steps:
+      - intent: thanks
+      - action: utter_you_are_welcome
+
+
+  - rule: Get cybersecurity advice
+    steps:
+      - intent: ask_advice
+      - action: action_give_cybersecurity_advice
+
+  - rule: Affirmation
+    steps:
+      - intent: affirm
+      - action: utter_affirmation
+
+  - rule: Denial
+    steps:
+      - intent: deny
+      - action: utter_denial
+
+  - rule: Scan for viruses
+    steps:
+      - intent: scan_viruses
+      - action: utter_scan_viruses
+      - action: action_scan_viruses
+
+  - rule: Scan for malware
+    steps:
+      - intent: scan_malware
+      - action: utter_scan_malware
+      - action: action_scan_malware
+
+  - rule: Enable firewall
+    condition:
+      - active_loop: null
+    steps:
+      - intent: enable_firewall
+      - action: utter_enable_firewall
+
+  - rule: Install antivirus software
+    steps:
+      - intent: install_antivirus
+      - action: utter_install_antivirus
+
+  - rule: Ask about software update frequency
+    steps:
+      - intent: ask_software_update_frequency
+      - action: utter_ask_software_update_frequency
+
+  - rule: Ask about password best practices
+    steps:
+      - intent: ask_password_best_practices
+      - action: utter_ask_password_best_practices
+
+  - rule: Ask about ask about cybersecurity
+    steps:
+      - intent: ask_about_cybersecurity
+      - action: action_ask_about_cybersecurity     
+
+  - rule: Ask about security breach response
+    steps:
+      - intent: ask_security_breach_response
+      - action: utter_ask_security_breach_response
+
+  - rule: Ask about data backup methods
+    steps:
+      - intent: ask_data_backup_methods
+      - action: utter_ask_data_backup_methods
+
+  - rule: Ask for safe browsing tips
+    steps:
+      - intent: ask_safe_browsing_tips
+      - action: utter_ask_safe_browsing_tips
+
+  - rule: Ask about phishing prevention
+    steps:
+      - intent: ask_phishing_prevention
+      - action: utter_ask_phishing_prevention
+
+  - rule: Ask about social engineering awareness
+    steps:
+      - intent: ask_social_engineering_awareness
+      - action: utter_ask_social_engineering_awareness
+
+  - rule: Ask for network security tips
+    steps:
+      - intent: ask_network_security_tips
+      - action: utter_ask_network_security_tips
+
+  - rule: Default fallback action
+    steps:
+      - action: utter_default
+
+  - rule: Handle fallback intent
+    steps:
+      - intent: fallback
+      - action: utter_default
+      
+  - rule: Respond to mobile device security inquiries
+    steps:
+      - intent: ask_mobile_device_security
+      - action: utter_ask_mobile_device_security
+
+  - rule: Report an incident 
+    steps:
+      - intent: report_incident
+      - action: utter_report_incident     
+     
+  - rule: Recover hacked account
+    steps:
+      - intent: recover_hacked_account
+      - action: utter_recover_hacked_account
+
+  - rule: Ask about ask about phishing
+    steps:
+      - intent: ask_about_phishing
+      - action: action_ask_about_phishing
+
+  - rule: Ask about ask about malware
+    steps:
+      - intent: ask_about_malware
+      - action: action_ask_about_malware
+  
